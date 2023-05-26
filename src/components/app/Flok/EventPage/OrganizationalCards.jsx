@@ -38,7 +38,7 @@ const OrganizationalCards = () => {
      <Grid  templateColumns={{ base: "repeat(1, 1fr)",sm:"repeat(2, 1fr)", md: "repeat(2, 1fr)",lg:'repeat(2, 1fr)' }}  w="100%" gap="24px">
      {OrganizationData.map((j,index) => (
         <Box key={index}>
-            <Image mb='40px' alt="img" src={j.Image} />
+            <Image w='100%' mb='40px' alt="img" src={j.Image} />
             <Text
             
             color="#1F1F1F"
