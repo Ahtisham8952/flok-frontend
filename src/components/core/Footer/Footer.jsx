@@ -83,7 +83,7 @@ const Footers = () => {
       Location & Language
           </Text>
           <Flex alignItems={"center"} gap='10px'>
-            <Image src="/flagshipg.svg"></Image>
+            <Image alt="img"src="/flagshipg.svg"></Image>
           <Text
           
             color="#8F8F8F"
@@ -103,15 +103,15 @@ const Footers = () => {
 </Box>
 <Flex justifyContent={"space-between"} flexDirection={{base:'column',sm:'row'}} alignItems="center">
     <Flex alignItems={"center"} gap="13px">
-        <Image src="/facebookicon.svg"></Image>
-        <Image src="/instaicon.svg"></Image>
-        <Image src="/youtubeicon.svg"></Image>
-        <Image src="/twittericon.svg"></Image>
+        <Image alt="img"src="/facebookicon.svg"></Image>
+        <Image alt="img"src="/instaicon.svg"></Image>
+        <Image alt="img"src="/youtubeicon.svg"></Image>
+        <Image alt="img"src="/twittericon.svg"></Image>
     </Flex>
     <Box bg="#1F1F1F" borderRadius={"29px"} p="18px 33px" mt={{base:'20px',sm:'0px'}}> 
     <Flex gap="13px" alignItems={"center"}>
         <Box bg="#14FF00" h="10px" w="10px" borderRadius={"50%"}></Box>
-        <Image src="/chaticons.svg"></Image>
+        <Image alt="img"src="/chaticons.svg"></Image>
         <Text
             
             color="#FFFFFF"

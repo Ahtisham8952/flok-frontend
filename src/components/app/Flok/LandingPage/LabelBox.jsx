@@ -56,10 +56,10 @@ const LabelBox = () => {
   return (
     <Box maxW={"1530px"} w='100%' mx="auto">
          <Grid  templateColumns={{ base: "repeat(2, 1fr)",sm:"repeat(3, 1fr)", md: "repeat(4, 1fr)",lg:'repeat(5, 1fr)' }}  w="100%" gap="24px">
-        {LabelData.map((li) => (
- <Box bg="#FFFFFF" borderRadius={"5px"} maxW="270px" w="100%" py="11px" px="15px" display={"flex"} alignItems="center" gap={{base:'24px',md:'34px',lg:'45px',xl:'64px'}}>
+        {LabelData.map((li,index) => (
+ <Box key={index} bg="#FFFFFF" borderRadius={"5px"} maxW="270px" w="100%" py="11px" px="15px" display={"flex"} alignItems="center" gap={{base:'24px',md:'34px',lg:'45px',xl:'64px'}}>
 
- <Image src={li.Image}></Image>
+ <Image alt="img"src={li.Image}></Image>
  <Text
              
              color="#B8B8B8"

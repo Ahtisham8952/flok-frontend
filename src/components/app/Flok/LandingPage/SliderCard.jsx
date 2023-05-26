@@ -8,7 +8,7 @@ const SliderCard = ({image,Name,TrxID}) => {
    
    <Box bg="#FFFFFF"  >
    <Box mb="20px">
-   <Image w="100%" src={image}></Image>
+   <Image alt="img"w="100%" src={image}></Image>
    </Box>
   <Box p='20px'>
   <Text

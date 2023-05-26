@@ -28,8 +28,8 @@ const LanguageDropdown = () => {
           >
       Language
           </Text>
-          <Image src="/flagships.svg"></Image>
-          <Image src="/tipdown.svg"></Image>
+          <Image alt="img"src="/flagships.svg"></Image>
+          <Image alt="img"src="/tipdown.svg"></Image>
         </Flex>
      
     </MenuButton>

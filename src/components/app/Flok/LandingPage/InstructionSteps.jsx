@@ -33,9 +33,9 @@ const InstructionSteps = () => {
         
         <Box  py="34px" maxW={"1733px"} w="100%" mx="auto" px="20px">
         <Grid  templateColumns={{ base: "repeat(1, 1fr)",sm:"repeat(2, 1fr)", md: "repeat(3, 1fr)",lg:'repeat(4, 1fr)' }}  w="100%" gap="24px">
-          {StepsData.map((li) => (
-          <Box>
-            <Image mx="auto" pb="16px" src={li.Image}></Image>
+          {StepsData.map((li, index) => (
+          <Box key={index}>
+            <Image alt="img" mx="auto" pb="16px" src={li.Image}></Image>
             <Text
             mb="8px"
             color="#FFFFFF"

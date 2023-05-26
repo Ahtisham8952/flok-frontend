@@ -38,7 +38,7 @@ const MenuCollapseComponent = ({links, btnText, btnImg}) => {
         position={"relative"}
         _hover={{bgGradient: "linear(97.3deg, #1386F0 0%, #1673FF 100%)", color: "#FFFFFF"}}
       >
-        {!isToggleOpen & isImgColor ? <Image src={btnImg} alt="icon" mr={"17px"} /> : <Image src={btnImg} alt="icon" mr={"17px"} filter='auto' brightness='100' /> }
+        {!isToggleOpen & isImgColor ? <Image alt="img"src={btnImg} alt="icon" mr={"17px"} /> : <Image alt="img"src={btnImg} alt="icon" mr={"17px"} filter='auto' brightness='100' /> }
         
         <Text
           position="relative"

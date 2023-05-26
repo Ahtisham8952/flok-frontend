@@ -6,7 +6,7 @@ const LocationTabContent = () => {
   return (
    <Box>
     <Box mb="50px">
-        <Image src="/mapimages.png"></Image>
+        <Image alt="img"src="/mapimages.png"></Image>
     </Box>
     <Box mb='50px'>
 

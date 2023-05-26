@@ -52,12 +52,12 @@ const Header = () => {
             <Input w='63%' placeholder='Search' bg="none" border={"none"} _focusVisible={{border:'none'}} />
             <Flex gap='10px ' alignItems={"center"} >
               
-              <Image src='/saerchbaricon.svg'></Image>
+              <Image alt="img"src='/saerchbaricon.svg'></Image>
               <Box bg="rgba(166, 166, 166, 0.28)" w='1px' h='22px' >
 
               </Box>
            
-             <Image src='/filtericons.svg'></Image>
+             <Image alt="img"src='/filtericons.svg'></Image>
              
               
             </Flex>

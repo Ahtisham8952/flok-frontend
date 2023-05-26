@@ -28,7 +28,7 @@ const MenuMainLink = ({menuLinkImg , menuItem, menuUrl }) => {
         }}
       >
         {!isImgColor ? (
-          <Image src={menuLinkImg} alt="icon" mr={"17px"} />
+          <Image alt="img"src={menuLinkImg} alt="icon" mr={"17px"} />
         ) : (
           <Image
             src={menuLinkImg}
