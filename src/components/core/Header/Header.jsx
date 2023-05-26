@@ -15,13 +15,9 @@ import {
 } from "@chakra-ui/react";
 
 import React from "react";
-import MenuComponent from "./Menu";
-import SearchBox from "./Search";
-import MenuItemList from "./MenuList";
+
 import MobileMenu from "./MobileMenu";
-import UserMenu from "./UserMenu";
-import AfterLoginMenu from "./AfterLoginMenu";
-import NotificationMenu from "../Header/NotificationMenu"
+
 import LanguageDropdown from "./LanguageDropdown";
 
 const Header = () => {

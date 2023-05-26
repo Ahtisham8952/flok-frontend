@@ -100,7 +100,7 @@ export default class SimpleSlider extends Component {
             colorScheme={"transparent"}
             onClick={this.previous}
           >
-            <Image alt="img"h={{base:'20px',md:'30px'}} src="/dullleft.svg"></Image>
+            <Image alt="img" h={{base:'20px',md:'30px'}} src="/dullleft.svg"></Image>
           </Button>
         </Box>
         <Box
@@ -118,7 +118,7 @@ export default class SimpleSlider extends Component {
             bg="transparent"
             colorScheme={"transparent"}
           >
-            <Image alt="img"h={{base:'20px',md:'30px'}} src="/dullarows.svg"></Image>
+            <Image alt="img" h={{base:'20px',md:'30px'}} src="/dullarows.svg"></Image>
           </Button>
         </Box>
        <Box maxW={"1632px"} w="100%" mx="auto" >

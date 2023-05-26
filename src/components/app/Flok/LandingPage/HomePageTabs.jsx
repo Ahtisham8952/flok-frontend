@@ -9,10 +9,10 @@ const HomePageTabs = () => {
 <Tabs>
   <TabList w='100%' justifyContent={"center"} borderBottom={"none"} mb='30px'>
     <Tab _selected={{borderBottom:'none'}}>
-        <Image alt="img"src="/charticon.svg"></Image>
+        <Image  src="/tabicon-1.svg" alt='imgicon'/>
     </Tab>
     <Tab _selected={{borderBottom:'none'}}>
-    <Image alt="img"src="/locationicon.svg"></Image>
+    <Image    src="/tabicon-2.svg" alt='imgicon'/>
     </Tab>
     
   </TabList>
