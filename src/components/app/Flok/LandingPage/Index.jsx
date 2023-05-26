@@ -9,7 +9,7 @@ const LandingPage = () => {
   return (
     <>
    
-    <Box pt='100px' maxW={"1750px"} w='100%' mx='auto' px='20px'>
+    <Box pt={{base:'30px',md:'40px',lg:'60px',xl:'100px'}} maxW={"1750px"} w='100%' mx='auto' px='20px'>
       <Box mb='40px'>
       <LabelBox/>
       </Box>
