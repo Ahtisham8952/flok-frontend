@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footers = () => {
   return (
-   <Box bg="#F3F3F3">
+   <Box bg="#F3F3F3" pt='47px' borderTop={"5px solid #DAD9D9 "}>
     <Box maxW={"1740px"} mx="auto" px="20px" py="20px" >
 <Flex justifyContent={"space-between"} gap="100px" flexDirection={{base:'column',md:'row'}} mb="32px">
     <Box w={{base:'100%',md:'50%'}}>
