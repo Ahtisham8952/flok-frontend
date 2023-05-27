@@ -130,8 +130,9 @@ const SearchBarFilter = () => {
          p="40px"
         >
            <Grid  templateColumns={{ base: "repeat(2, 1fr)",sm:"repeat(4, 1fr)", md: "repeat(5, 1fr)",lg:'repeat(10, 1fr)' }}  w="100%" gap="32px">
-           {data.map((li) => (
-            <Button bg="#F2F2F2" colorScheme={"#F2F2F2"} 
+           {data.map((li,index) => (
+            
+            <Button key={index} bg="#F2F2F2" colorScheme={"#F2F2F2"} 
      color="#B8B8B8"
      fontSize="10px"
      fontWeight="400"
