@@ -39,7 +39,7 @@ const InstructionSteps = () => {
             <Text
             mb="8px"
             color="#FFFFFF"
-            fontSize="20px"
+            fontSize={{base:'14px',md:'16px',lg:'20px'}}
             fontWeight="700"
             lineHeight={"30px"}
             textAlign="center"
@@ -49,7 +49,7 @@ const InstructionSteps = () => {
           <Text
             mb="8px"
             color="#FFFFFF"
-            fontSize="16px"
+            fontSize={{base:'12px',md:'14px',lg:'16px'}}
             fontWeight="300"
             lineHeight={"25px"}
             textAlign="center"

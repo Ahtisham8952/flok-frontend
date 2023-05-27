@@ -16,7 +16,7 @@ const LandingPage = () => {
       
 
     </Box>
-    <Box pt={{base:'20px',md:'40px',lg:'60px',xl:'100px'}} maxW={"1750px"} w='100%' mx='auto' px='20px'>
+    <Box pt={{base:'20px',md:'20px',xxxl:'40px'}} maxW={"1750px"} w='100%' mx='auto' px='20px'>
     <HomePageTabs/>
     </Box>
    

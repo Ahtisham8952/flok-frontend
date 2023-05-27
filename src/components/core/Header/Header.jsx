@@ -19,11 +19,12 @@ import React from "react";
 import MobileMenu from "./MobileMenu";
 
 import LanguageDropdown from "./LanguageDropdown";
+import SearchBarFilter from "./SearchBarFilter";
 
 const Header = () => {
   return (
     <>
-      <Box py="12px" bg="#1F1F1F" >
+      <Box py={{base:'6px',md:'12px'}} bg="#1F1F1F" position={"relative"} >
         <Container maxW={"1675px"} px="20px">
           <Flex justifyContent="space-between" alignItems="center" gap="20px">
             <Flex>
@@ -37,6 +38,8 @@ const Header = () => {
                 mt={{ base: "6px", md: "2px" }}
               >
                 <Image
+                h={{base:'20px',md:'28px'}}
+                w={{base:'50px',md:'103px'}}
                   src="/logoflok.svg"
                   alt="logo"
                 />
@@ -44,20 +47,10 @@ const Header = () => {
               </Link>
               
             </Flex>
-            <Box bg='#FFFFFF' pr='12px' w={"290px"}  borderRadius={"10px"}  justifyContent={"space-between"} display={{ lg: "flex", base: "none" }}>
-            <Input w='63%' placeholder='Search' bg="none" border={"none"} _focusVisible={{border:'none'}} />
-            <Flex gap='10px ' alignItems={"center"} >
-              
-              <Image alt="img"src='/saerchbaricon.svg'></Image>
-              <Box bg="rgba(166, 166, 166, 0.28)" w='1px' h='22px' >
-
-              </Box>
-           
-             <Image alt="img"src='/filtericons.svg'></Image>
-             
-              
-            </Flex>
+            <Box display={{ lg: "flex", base: "none" }}>
+            <SearchBarFilter/>
             </Box>
+           
            
 
             
