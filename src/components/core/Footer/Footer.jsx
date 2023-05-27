@@ -10,9 +10,10 @@ const Footers = () => {
     <Text
             mb="20px"
             color="#1F1F1F"
-            fontSize={{base:'24px',md:'26px',lg:'28px',xl:"32px"}}
+            fontSize={{base:'20px',md:'24px',lg:'28px',xl:"32px"}}
             fontWeight="700"
             lineHeight={"52px"}
+            textAlign={{base:'center',sm:'left'}}
           >
       Enjoy 15% off your first order
           </Text>
