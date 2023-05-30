@@ -35,8 +35,8 @@ const OrganizationCardStyle1 = () => {
       columnGap="8"
       rowGap="8"
     >
-      {Data.map((li) => (
-        <Box>
+      {Data.map((li,index) => (
+        <Box key={index}>
           <Box>
             <Box spacing="30px" justify="center">
               <Box>
