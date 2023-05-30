@@ -10,7 +10,7 @@ const OrganizationPageStyle3 = () => {
   
     <Box maxW="1760px" width="100%" margin="auto" px="20px" py="20px">
       <Box>
-        <Image alt="img" src="/roundbanner.png" alt="banner"></Image>
+        <Image  src="/roundbanner.png" alt="banner2"/>
       </Box>
       <Box>
         <Box
