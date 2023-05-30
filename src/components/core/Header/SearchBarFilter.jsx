@@ -105,7 +105,7 @@ const SearchBarFilter = () => {
       };
   return (
 <Box >
-<Box bg='#FFFFFF' pr='12px' w={"290px"}  borderRadius={"10px"}  justifyContent={"space-between"} display={"flex"}>
+<Box bg='#FFFFFF' pr='12px' w={"290px"}  borderRadius={"10px"}  justifyContent={"space-between"} display={"flex"} >
             <Input onClick={() => setIsOpen(!isOpen)} w='63%' placeholder='Search' bg="none" border={"none"} _focusVisible={{border:'none'}} />
             <Flex gap='10px ' alignItems={"center"} >
               

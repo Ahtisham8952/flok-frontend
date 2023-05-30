@@ -3,11 +3,14 @@ import React from 'react';
 import LabelBox from './LabelBox';
 import HomePageTabs from './HomePageTabs';
 import InstructionSteps from './InstructionSteps';
+import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper';
 
 const LandingPage = () => {
   
   return (
     <>
+   <LayoutWrapper>
+
    
     <Box pt={{base:'30px',md:'40px',lg:'60px',xl:'100px'}} maxW={"1750px"} w='100%' mx='auto' px='20px'>
       <Box mb='40px'>
@@ -23,6 +26,7 @@ const LandingPage = () => {
     <Box>
         <InstructionSteps/>
       </Box>
+      </LayoutWrapper>
        
        
 

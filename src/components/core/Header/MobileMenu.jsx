@@ -110,11 +110,14 @@ export const MobileMenu = () => {
               </Box>
             
             </Flex>
-            
+            <Box mt="20px">
+            <SearchBarFilter/>
+            </Box>
              <LanguageDropdown/>
               
             </Flex>
-            <SearchBarFilter/>
+           
+           
           </DrawerBody>
         </DrawerContent>
       </Drawer>

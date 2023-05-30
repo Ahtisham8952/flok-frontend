@@ -10,21 +10,24 @@ import LayoutWrapper from '../src/components/core/LayoutWrapper/LayoutWrapper'
 
 
 import { mynewtheme } from '../src/theme'
+import LandingPage from '../src/components/app/Flok/LandingPage/Index'
+import EventMain from '../src/components/app/Flok/EventPage'
 
-function Marketplace({ Component, pageProps }) {
+function Flok({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS theme={mynewtheme}>
      
        
-      <LayoutWrapper>
+     
 
      
         <Component {...pageProps} />
-        </LayoutWrapper>
        
      
     </ChakraProvider>
+    
+  
   )
 }
 
-export default Marketplace
+export default Flok

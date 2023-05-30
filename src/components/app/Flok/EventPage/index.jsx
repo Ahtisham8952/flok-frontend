@@ -3,9 +3,13 @@ import React from 'react'
 import ImageGallery from './ImageGallery'
 import FlokSlider from "../LandingPage/FlokSlider"
 import OrganizationalCards from './OrganizationalCards'
+import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper'
 const EventMain = () => {
     return (
         <>
+        <LayoutWrapper>
+
+       
             <Box maxW={"1760px"} w='100%' px='20px' mx="auto" mb='100px'>
                 <Box mb='100px'>
                 <Image alt="banner" src='/eventBanner.png'/> 
@@ -176,6 +180,7 @@ const EventMain = () => {
 
 
             </Box>
+            </LayoutWrapper>
 
         </>
     )
