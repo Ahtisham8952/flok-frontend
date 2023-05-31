@@ -49,29 +49,29 @@ const Registration = () => {
         
     <FormControl >
         <FormLabel fontWeight={'700'}>NAME </FormLabel>
-        <Box h={{base:'45px',md:'75px'}} bg="white" borderRadius="5px">
+        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
-            fontWeight="600"
+            fontWeight="400"
             type='text'
-            lineHeight={"150%"} h='100%' placeholder='name' border="none" _focusVisible={{border:'none'}}  />
+            lineHeight={"150%"} h='100%' placeholder='Enter Your name' border="none" _focusVisible={{border:'none'}}  />
         </Box>
       </FormControl>
       <FormControl >
         <FormLabel fontWeight={'700'}>Email </FormLabel>
-        <Box h={{base:'45px',md:'75px'}} bg="white" borderRadius="5px">
+        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
-            fontWeight="600"
+            fontWeight="400"
             type='email'
-            lineHeight={"150%"} h='100%' placeholder='Email' border="none" _focusVisible={{border:'none'}}  />
+            lineHeight={"150%"} h='100%' placeholder='Enter Email' border="none" _focusVisible={{border:'none'}}  />
         </Box>
       </FormControl>
       <FormControl >
         <FormLabel fontWeight={'700'}>password </FormLabel>
-        <Box h={{base:'45px',md:'75px'}} bg="white" borderRadius="5px">
+        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
-            fontWeight="600"
+            fontWeight="400"
             type='password'
-            lineHeight={"150%"} h='100%' placeholder='Password' border="none" _focusVisible={{border:'none'}}  />
+            lineHeight={"150%"} h='100%' placeholder=' Enter Password' border="none" _focusVisible={{border:'none'}}  />
         </Box>
       </FormControl>
     </Box>

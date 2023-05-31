@@ -55,17 +55,17 @@ export const Loginpage = () => {
           <Flex display={"flex" } gap={{base:'30px',md:'75px'}} maxW={"1450px"} w='100%' mt='75px' flexDirection={{base:'column',md:'row'}}>
           <FormControl isRequired>
         <FormLabel>USERNAME </FormLabel>
-        <Box h={{base:'45px',md:'90px'}} bg="white" borderRadius="5px">
+        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
-            fontWeight="600"
+            fontWeight="300"
             lineHeight={"150%"} h='100%' placeholder='Enter you Username' border="none" _focusVisible={{border:'none'}}  />
         </Box>
       </FormControl>
       <FormControl isRequired>
         <FormLabel>PASSWORD </FormLabel>
-        <Box h={{base:'45px',md:'90px'}} bg="white" borderRadius="5px">
+        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
-            fontWeight="600"
+            fontWeight="300"
             lineHeight={"150%"} h='100%' _focusVisible={{border:'none'}}  placeholder='Enter your Password'   />
         </Box>
        
