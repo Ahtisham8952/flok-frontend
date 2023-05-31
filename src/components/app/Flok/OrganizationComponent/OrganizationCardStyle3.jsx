@@ -1,4 +1,4 @@
-import { Box, Text, Flex, Heading } from "@chakra-ui/react";
+import { Box, Text, Flex, Heading, Image } from "@chakra-ui/react";
 
 const cardData = [
   {
