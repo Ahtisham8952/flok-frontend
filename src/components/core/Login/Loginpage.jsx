@@ -8,7 +8,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper"
 export const Loginpage = () => {
   return (
     <LayoutWrapper>
-<Box maxW={"1760px"} w='100%' px='20px' mx={"auto"} h='100vh'>
+<Box maxW={"1760px"} w='100%' px='20px' mx={"auto"} >
 
 
     
@@ -58,7 +58,7 @@ export const Loginpage = () => {
         <Box h={{base:'45px',md:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
             fontWeight="600"
-            lineHeight={"150%"} h='100%' placeholder='Username' border="none" _focusVisible={{border:'none'}}  />
+            lineHeight={"150%"} h='100%' placeholder='Enter you Username' border="none" _focusVisible={{border:'none'}}  />
         </Box>
       </FormControl>
       <FormControl isRequired>
@@ -66,7 +66,7 @@ export const Loginpage = () => {
         <Box h={{base:'45px',md:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
             fontWeight="600"
-            lineHeight={"150%"} h='100%' _focusVisible={{border:'none'}}  placeholder='Email'   />
+            lineHeight={"150%"} h='100%' _focusVisible={{border:'none'}}  placeholder='Enter your Password'   />
         </Box>
        
       </FormControl>
@@ -108,7 +108,7 @@ export const Loginpage = () => {
             lineHeight={"150%"}
           >
        Not Registered yet? 
-       <Link mx='10px' fontSize="20px"
+       <Link mx='10px' fontSize={{base:'14px',lg:'20px'}}
         href="/signup"
        textDecoration={"underline"}
             fontWeight="600">
