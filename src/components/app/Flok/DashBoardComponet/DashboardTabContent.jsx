@@ -140,8 +140,8 @@ const DashboardTabContent = () => {
         Customer List
           </Text>
     </Box>
-    {CustomerList.map((li) => (
-        <Flex justifyContent={"space-between"} my='50px'>
+    {CustomerList.map((li,index) => (
+        <Flex key={index} justifyContent={"space-between"} my='50px'>
 <Flex gap='20px' alignItems={"center"} pb='20px'  >
  <Image alt="img" src={li.Image}></Image>
 <Box>

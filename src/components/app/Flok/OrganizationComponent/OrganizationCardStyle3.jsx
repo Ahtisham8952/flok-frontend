@@ -42,7 +42,7 @@ function OrganizationCardStyle3() {
           justifyContent="space-between"
         >
           <Box flex={1}>
-            <img src={card.image} alt={`Image ${index}`} />
+            <Image src={card.image} alt={`Image ${index}`} />
           </Box>
           <Box flex={1} p={4}>
             <Heading
