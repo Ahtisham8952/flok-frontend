@@ -1,4 +1,4 @@
-import { Box, Center, Flex } from "@chakra-ui/react";
+import { Box, Text, Flex, Heading } from "@chakra-ui/react";
 
 const cardData = [
   {
@@ -29,7 +29,7 @@ const cardData = [
 
 function OrganizationCardStyle3() {
   return (
-    <Box>
+    <Box maxW="80%" margin="0 auto">
       {cardData.map((card, index) => (
         <Flex
           key={index}
@@ -39,12 +39,13 @@ function OrganizationCardStyle3() {
           }}
           align="center"
           my="60px"
+          justifyContent="space-between"
         >
           <Box flex={1}>
             <img src={card.image} alt={`Image ${index}`} />
           </Box>
           <Box flex={1} p={4}>
-            <Box
+            <Heading
               fontSize={{
                 base: "26px",
                 sm: "28px",
@@ -57,14 +58,15 @@ function OrganizationCardStyle3() {
               py={{ base: "20px" }}
             >
               {card.title}
-            </Box>
-            <Box
-              fontSize="20px"
-              lineHeight={{ base: "40px", md: "42px", lg: "46px" }}
+            </Heading>
+            <Text
+              fontSize={{base:"15px",md:"16px"}}
+              lineHeight={{ base: "40px", md: "26px", lg: "46px" }}
               textAlign={{ base: "center", md: "left", lg: "left" }}
+              maxW={"604px"}
             >
               {card.content}
-            </Box>
+            </Text>
           </Box>
         </Flex>
       ))}

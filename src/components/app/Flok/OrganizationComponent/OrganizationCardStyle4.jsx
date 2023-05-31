@@ -1,6 +1,6 @@
 import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import React from "react";
-const Data2 = [
+const Data = [
   {
     Image: "/postround.png",
     Title: "Organization Staff",
@@ -29,45 +29,51 @@ const Data2 = [
 const OrganizationCardStyle4 = () => {
   return (
     <Box>
-      <Box>
-        {Data2.map((li, index) => (
+      <Box >
+      <Box width="80%" margin="0 auto">
+        {Data.map((li, index) => (
           <Flex
             key={index}
             direction={{
-              base: "column-reverse",
-              sm: "column-reverse",
+              base: "column",
+              sm: "column",
               md: "row",
               lg: "row",
             }}
-            justify="space-around"
+            justify="space-between"
             align="center"
             mb={{ base: "40px", lg: "80px" }}
           >
-            <Box width={{ base: "80%", sm: "80%", md: "50%", lg: "50%" }}>
-              <Box>
-                <Box>
-                  <Box
-                    fontSize={{ base: "26px", md: "28px", lg: "32px" }}
-                    lineHeight={{ base: "30px", md: "32px", lg: "36px" }}
+           
+            <Box width={{ base: "100%", sm: "100%", md: "45%", lg: "50%" }}>
+            
+                  <Heading
+                    fontSize={{
+                      base: "26px",
+                      sm: "28px",
+                      md: "22px",
+                      lg: "32px",
+                    }}
+                    lineHeight={{ base: "30px", md: "px", lg: "36px" }}
                     fontWeight="600"
                     textAlign={{ base: "center", md: "left", lg: "left" }}
-                    py={{ base: "20px" }}
+                    pb={{ base: "20px" }}
                   >
                     {li.Title}
-                  </Box>
+                  </Heading>
                   <Text
-                    lineHeight={{ base: "30px", md: "35px", lg: "40px" }}
+                    lineHeight={{ base: "24px", md: "24px", lg: "40px" }}
                     textAlign={{ base: "center", md: "left", lg: "left" }}
-                    font-size="20px"
+                    fontSize={{base:"16px",sm:"16px",md:"14px",lg:"20px"}}
+                    maxW={"604px"}
                   >
                     {li.Description}
                   </Text>
-                </Box>
-              </Box>
+                
             </Box>
-            <Box>
+            <Box  width={{ base: "100%", sm: "100%", md: "50%", lg: "45%" }}>
               <Image
-                width={{ base: "400px", md: "500px", lg: "500px" }}
+               w='100%'
                 src={li.Image}
                 alt="Caffe Latte"
               />
@@ -75,6 +81,7 @@ const OrganizationCardStyle4 = () => {
           </Flex>
         ))}
       </Box>
+    </Box>
     </Box>
   );
 };

@@ -7,11 +7,11 @@ const OrganizationPageStyle2 = () => {
   return (
     <LayoutWrapper>
 
-    
-    <Box maxW="1760px" width="100%" px='20px' mx='auto'>
-      <Box>
-        <Image src="/banner.png" alt="banner"></Image>
+<Box>
+        <Image w="100%" src="/banner.png" alt="banner"></Image>
       </Box>
+    <Box maxW="1760px" width="100%"  mx='auto'>
+      
       <Box>
         <Box
           mt="64px"

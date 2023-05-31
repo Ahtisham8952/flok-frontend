@@ -27,6 +27,20 @@ export const mynewtheme = extendTheme({
           }
         }
       },
+    },
+    
+    
+  },
+  components: {
+    Checkbox: {
+      baseStyle: {
+        control: {
+          bg: "transparent",
+          _checked: {
+            bg: "black"
+          }
+        }
+      }
     }
   },
   breakpoints: {
