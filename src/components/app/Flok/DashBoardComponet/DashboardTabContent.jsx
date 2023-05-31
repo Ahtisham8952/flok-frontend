@@ -101,8 +101,8 @@ const DashboardTabContent = () => {
         <CalendarSlider/>
     </Box>
     <Box>
-    {EventsDetail.map((list) => (
-        <Flex gap='20px' alignItems={"center"} pb='20px' borderBottom={" 1px solid #E7E7E7"} my="50px" flexWrap={"wrap"} >
+    {EventsDetail.map((list,index) => (
+        <Flex key={index} gap='20px' alignItems={"center"} pb='20px' borderBottom={" 1px solid #E7E7E7"} my="50px" flexWrap={"wrap"} >
             <Image  alt="img" src={list.Image}></Image>
 <Box>
 <Text

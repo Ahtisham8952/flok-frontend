@@ -71,8 +71,8 @@ const ReviewTable = ({ReviewData}) => {
 
                     </Thead>
                     <Tbody>
-                        {ReviewData.map((li) => (
-                            <Tr h='100%'>
+                        {ReviewData.map((li,index) => (
+                            <Tr key={index} h='100%'>
                                 <Td w='2%'>
                                     <Checkbox size='lg'></Checkbox>
                                 </Td>

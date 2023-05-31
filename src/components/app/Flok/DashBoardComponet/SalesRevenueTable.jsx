@@ -93,8 +93,8 @@ const SalesRevenueTable = () => {
                         </Tr>
                     </Thead>
                     <Tbody>
-                    {RevenueData.map((li) => (
-                        <Tr>
+                    {RevenueData.map((li,index) => (
+                        <Tr key={index}>
                             <Td
                              color="#BABABA"
                              fontSize="12px"

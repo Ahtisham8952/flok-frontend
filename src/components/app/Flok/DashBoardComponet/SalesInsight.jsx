@@ -54,8 +54,8 @@ We are here to help manage your ticket!
 </Text>
 {/* sales Revenue Deals */}
 <Flex justifyContent={"space-between"} mb='40px' flexWrap={"wrap"}>
-{salesInsight.map((li) => (
-    <Flex alignItems={"center"} gap="16px" flexDirection={{base:'column',lg:'row'}}>
+{salesInsight.map((li,index) => (
+    <Flex key={index} alignItems={"center"} gap="16px" flexDirection={{base:'column',lg:'row'}}>
     <Box bg='#E6E6E6' borderRadius={"10px"} p={{base:'8px',lg:'17px'}}>
         <Image  alt="img" src={li.Img}></Image>
 
