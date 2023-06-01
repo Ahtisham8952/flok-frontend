@@ -2,8 +2,8 @@ import { Box, Grid, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 const LabelData=[
     {
-        Image:'/persons-1.svg',
-        Name:'Dance'
+        Image:'/kidsname-1.svg',
+        Name:'Sports'
 
     },
     {
@@ -12,28 +12,28 @@ const LabelData=[
 
     },
     {
-        Image:'/persons-3.svg',
-        Name:'Language'
+        Image:'/kidsname-2.svg',
+        Name:'Art'
 
     },
     {
         Image:'/persons-4.svg',
-        Name:'Adventure'
+        Name:'Educational'
 
     },
     {
-        Image:'/persons-5.svg',
-        Name:'Reading'
+        Image:'/birthdayicon-1.svg',
+        Name:'birthdays'
 
     },
     {
-        Image:'/persons-6.svg',
-        Name:'Chess'
+        Image:'/campsicon-1.svg',
+        Name:'Camps'
 
     },
     {
-        Image:'/persons-7.svg',
-        Name:'All'
+        Image:'/wedicons-1.svg',
+        Name:'Wednesday'
 
     },
     {
@@ -59,7 +59,7 @@ const LabelBox = () => {
         {LabelData.map((li,index) => (
  <Box key={index} bg="#FFFFFF" borderRadius={"5px"} maxW="270px" w="100%" py="11px" px={{base:'11px',md:'12px',xl:'7px',xxl:'15px'}} display={"flex"} alignItems="center" gap={{base:'12px',md:'14px',lg:'20px',xl:'24px',xxl:'32px',xxxl:'64px'}}>
 
- <Image alt="img"src={li.Image}></Image>
+ <Image h={{base:'20px',md:'20px',lg:'30px'}} w={{base:'20px',md:'20px',lg:'30px'}} alt="img"src={li.Image}></Image>
  <Text
              
              color="#B8B8B8"

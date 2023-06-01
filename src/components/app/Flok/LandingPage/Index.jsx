@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Image } from '@chakra-ui/react';
 import React from 'react';
 import LabelBox from './LabelBox';
 import HomePageTabs from './HomePageTabs';
@@ -11,8 +11,11 @@ const LandingPage = () => {
     <>
    <LayoutWrapper>
 
-   
-    <Box pt={{base:'30px',md:'40px',lg:'60px',xl:'100px'}} maxW={"1750px"} w='100%' mx='auto' px='20px'>
+   <Box borderTop={"1px solid #2C2C2C"}>
+        <Image src="/kidsBanner.png"/>
+      </Box>
+    <Box pt={{base:'30px',md:'40px',lg:'60px',xl:'100px'}} maxW={"1750px"} w='100%' mx='auto' px='20px' >
+      
       <Box mb='40px'>
       <LabelBox/>
       </Box>

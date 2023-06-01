@@ -1,13 +1,18 @@
 import React from 'react';
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Box, Image } from '@chakra-ui/react'
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Box, Image, Flex } from '@chakra-ui/react'
 import ChartTabContent from './ChartTabContent';
 import LocationTabContent from './LocationTabContent';
+
+
+import CalendarDropdown from './CalendarDropdown';
+
 const HomePageTabs = () => {
-  // Component logic here
+  
   return (
     <Box>
 <Tabs>
-  <TabList w='100%' justifyContent={"center"} borderBottom={"none"} mb='30px'>
+  <Flex w='100%' alignItems={"center"} justifyContent={"center"}>
+  <TabList  justifyContent={"center"} borderBottom={"none"} >
     <Tab _selected={{borderBottom:'none'}}>
         <Image  src="/tabicon-1.svg" alt='imgicon'/>
     </Tab>
@@ -16,6 +21,9 @@ const HomePageTabs = () => {
     </Tab>
     
   </TabList>
+ <CalendarDropdown/>
+  </Flex>
+  
 
   <TabPanels p='0px'>
     <TabPanel p='0px'>

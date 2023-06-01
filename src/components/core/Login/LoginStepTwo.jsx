@@ -225,7 +225,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
           position="relative"
           zIndex="5"
         >
-          <Image src="plus.svg" alt="plus.svg" />
+          <Image  src="plus.svg" alt="plus.svg" />
         </Box>
         <Box textAlign="center" pt="10">
         <Button type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
