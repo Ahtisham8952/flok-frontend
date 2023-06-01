@@ -5,7 +5,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper"
 
 
 
-export const Loginpage = () => {
+const LoginPage = ({nextPage}) => {
   return (
     <LayoutWrapper>
 <Box maxW={"1760px"} w='100%' px='20px' mx={"auto"} >
@@ -66,7 +66,7 @@ export const Loginpage = () => {
         <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
         <Input fontSize="14px"
             fontWeight="300"
-            lineHeight={"150%"} h='100%' _focusVisible={{border:'none'}}  placeholder='Enter your Password'   />
+            lineHeight={"150%"} type="password" h='100%' _focusVisible={{border:'none'}}  placeholder='Enter your Password'   />
         </Box>
        
       </FormControl>
@@ -94,6 +94,7 @@ export const Loginpage = () => {
      p="8px 40px"
      borderRadius={"50px"}
      border="1px solid white"
+     onClick={nextPage}
      >
      Login
      </Button>
@@ -124,3 +125,4 @@ export const Loginpage = () => {
     </LayoutWrapper>
   );
 };
+export default LoginPage;

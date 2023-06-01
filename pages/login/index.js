@@ -1,12 +1,15 @@
 import React from 'react'
-import { Loginpage } from '../../src/components/core/Login/Loginpage'
 
-const index = () => {
+
+
+import LoginPageMain from '../../src/components/core/Login/Index'
+
+const LoginPageFlow = () => {
   return (
    <>
-   <Loginpage/>
+   <LoginPageMain/>
    </>
   )
 }
 
-export default index
+export default LoginPageFlow

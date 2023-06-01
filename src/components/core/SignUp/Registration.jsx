@@ -1,4 +1,4 @@
-import { Box, Checkbox,Text, FormControl, FormLabel, Heading, Input, ListItem, Radio, Stack, UnorderedList, RadioGroup, Button, Link } from '@chakra-ui/react'
+import { Box, Checkbox,Text, FormControl, FormLabel, Heading, Input, ListItem, Radio, Stack, UnorderedList, RadioGroup, Button, Link, Flex } from '@chakra-ui/react'
 import React from 'react'
 import LayoutWrapper from '../LayoutWrapper/LayoutWrapper'
 
@@ -112,13 +112,38 @@ const Registration = () => {
         Notification:
       </Heading>
       <Stack>
-        <Checkbox colorScheme="blackAlpha" >
+        <Checkbox  >
           Email
         </Checkbox>
-        <Checkbox colorScheme="blackAlpha" defaultChecked>
+        <Checkbox  defaultChecked>
           Instant notifications
         </Checkbox>
       </Stack>
+    </Box>
+    <Box width="100%" pt="5px">
+      <Heading
+        as="h2"
+        fontSize={{base:'20px',md:'24px'}}
+        fontWeight="700"
+        lineHeight="58px"
+        pt="5px"
+        pb="15px"
+        textColor="#1F1F1F"
+      >
+        
+        Terms and Conditions:
+      </Heading>
+      <Flex gap='5px ' flexDirection={{base:'column',md:'row'}}>
+      <Stack>
+        <Checkbox 
+        defaultChecked >
+        I agree to the Privacy & 
+        </Checkbox>
+        
+      </Stack>
+      <Link href='/terms' textDecoration={"underline"}> Terms and Conditions</Link>
+      </Flex>
+     
     </Box>
     <Button mt='30px' type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
      color="#FFFFFF"
