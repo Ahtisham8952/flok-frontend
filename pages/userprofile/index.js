@@ -1,5 +1,5 @@
 import React from 'react'
-import { ParentProfile } from '../../src/components/app/Flok/UserProfile/parentProfile'
+import { ParentProfile } from '../../src/components/app/Flok/UserProfile/ParentProfile'
 
 
 const ParentProfilePage = () => {
