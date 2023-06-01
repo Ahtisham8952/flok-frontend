@@ -5,7 +5,7 @@ export const Upload = () => {
   return (
     <Box display="flex">
       <label for="file-input">
-        <Image src="upload.svg" />
+        <Image alt='img' src="upload.svg" />
       </label>
       <Input display="none" id="file-input" type="file" />
     </Box>
