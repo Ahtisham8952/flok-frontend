@@ -4,6 +4,7 @@ import {
     Divider,
     Flex,
     Heading,
+    Image,
     Text,
     Wrap,
   } from "@chakra-ui/react";
