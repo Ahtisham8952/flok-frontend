@@ -11,7 +11,7 @@ const HomePageTabs = () => {
   return (
     <Box>
 <Tabs>
-  <Flex w='100%' alignItems={"center"} justifyContent={"center"}>
+  <Flex w='100%' alignItems={"center"} justifyContent={"center"} mb='30px'>
   <TabList  justifyContent={"center"} borderBottom={"none"} >
     <Tab _selected={{borderBottom:'none'}}>
         <Image  src="/tabicon-1.svg" alt='imgicon'/>
