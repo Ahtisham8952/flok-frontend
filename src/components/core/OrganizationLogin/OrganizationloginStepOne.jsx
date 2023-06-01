@@ -4,6 +4,7 @@ import {
   Checkbox,
   FormControl,
   Heading,
+  Image,
   Img,
   Input,
   InputGroup,
@@ -69,7 +70,7 @@ export const OrganizationloginStepOne = ({nextStep}) => {
               p={{ base: "8px", md: "8px", lg: "10px" }}
               borderRadius="35px"
             >
-              <Img alt="img" src="user.svg" pl="18px" />
+              <Image alt="img" src="user.svg" pl="18px" />
               <Input _focusVisible={{border:'none'}} type="Text" placeholder="Name" border="none" />
             </InputGroup>
             <InputGroup
@@ -78,7 +79,7 @@ export const OrganizationloginStepOne = ({nextStep}) => {
               p={{ base: "8px", md: "8px", lg: "10px" }}
               borderRadius="35"
             >
-              <Img alt="img" src="calendar.svg" pl="15px" />
+              <Image alt="img" src="calendar.svg" pl="15px" />
               <Input _focusVisible={{border:'none'}} type="Text" placeholder="Date" border="none" />
             </InputGroup>
           </FormControl>
