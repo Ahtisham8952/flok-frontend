@@ -46,25 +46,25 @@ export const Cardcontact = () => {
         <Flex>
           <Box>
             <Stack>
-              <Checkbox size="md" >
+              <Checkbox size="md" borderColor={"black"} >
                 Primary contact
               </Checkbox>
-              <Checkbox size="md" >
+              <Checkbox size="md" borderColor={"black"} >
                 Primary contact
               </Checkbox>
-              <Checkbox size="md" >
+              <Checkbox size="md"  borderColor={"black"}>
                 Parent or guardian{" "}
               </Checkbox>
-              <Checkbox size="md" >
+              <Checkbox size="md" borderColor={"black"} >
                 Parent or guardian{" "}
               </Checkbox>
-              <Checkbox size="md" >
+              <Checkbox size="md" borderColor={"black"} >
                 Email notifications{" "}
               </Checkbox>
-              <Checkbox size="md" >
+              <Checkbox size="md" borderColor={"black"} >
                 Instant notifications{" "}
               </Checkbox>
-              <Checkbox size="md" >
+              <Checkbox size="md" borderColor={"black"} >
                 Emegency contact{" "}
               </Checkbox>
             </Stack>

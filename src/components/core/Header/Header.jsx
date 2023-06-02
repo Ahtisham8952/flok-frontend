@@ -24,7 +24,7 @@ import SearchBarFilter from "./SearchBarFilter";
 const Header = () => {
   return (
     <>
-      <Box py={{base:'6px',md:'12px'}} bg="#1F1F1F" position={"relative"} >
+      <Box py={{base:'6px',md:'35px'}} bg="#1F1F1F" position={"relative"} >
         <Container maxW={"1675px"} px="20px">
           <Flex justifyContent="space-between" alignItems="center" gap="20px">
             <Flex>

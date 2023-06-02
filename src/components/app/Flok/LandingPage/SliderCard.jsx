@@ -1,9 +1,9 @@
-import { Box, Button, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Image, Text,Link } from '@chakra-ui/react'
 import React from 'react'
 
 const SliderCard = ({image,Name,TrxID}) => {
   return (
-    <Box mx={{base:'25px',md:'20px'}} >
+    <Box mx={{base:'25px',md:'20px'}} as={Link} href='/event' textDecoration={"none"} >
 
    
    <Box bg="#FFFFFF"  >

@@ -7,6 +7,7 @@ import {
     Image,
     Text,
     Wrap,
+    Link
   } from "@chakra-ui/react";
   import React from "react";
 
@@ -228,7 +229,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
           <Image  src="plus.svg" alt="plus.svg" />
         </Box>
         <Box textAlign="center" pt="10">
-        <Button type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+        <Button as={Link} href="/userprofile" type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
      color="#FFFFFF"
      fontSize="14px"
      fontWeight="400"

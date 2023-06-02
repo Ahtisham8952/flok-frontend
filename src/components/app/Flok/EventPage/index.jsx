@@ -176,7 +176,7 @@ const EventMain = () => {
 </Flex>
 <FlokSlider/>
 </Box>
-<OrganizationalCards/>
+
 
 
             </Box>

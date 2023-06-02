@@ -1,8 +1,34 @@
 import { Box, Checkbox,Text, FormControl, FormLabel, Heading, Input, ListItem, Radio, Stack, UnorderedList, RadioGroup, Button, Link, Flex } from '@chakra-ui/react'
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LayoutWrapper from '../LayoutWrapper/LayoutWrapper'
-
+import { useFormik } from 'formik';
+import { VStack, FormErrorMessage } from '@chakra-ui/react';
+import { useHistory } from 'react-router';
+import * as yup from 'yup';
+const validationSchema = yup.object().shape({
+  name: yup.string().required('Name is required'),
+  email: yup.string().email('Invalid email').required('Email is required'),
+  password: yup.string().min(6, 'Password must be at least 6 characters').required('Password is required'),
+});
 const Registration = () => {
+  
+  const initialValues = {
+    name: '',
+    email: '',
+    password: '',
+  };
+
+  const handleSubmit = (values) => {
+    console.log(values);
+    window.location.href = '/login';
+  };
+
+  const formik = useFormik({
+    initialValues,
+    validationSchema,
+    onSubmit: handleSubmit,
+  });
   return ( 
     <LayoutWrapper>
 
@@ -47,32 +73,38 @@ const Registration = () => {
        
             
         
-    <FormControl >
+    <FormControl  id="name" isInvalid={formik.errors.name && formik.touched.name}>
         <FormLabel fontWeight={'700'}>NAME </FormLabel>
-        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
-        <Input fontSize="14px"
+        
+      
+            <Input fontSize="14px"h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px"
             fontWeight="400"
             type='text'
-            lineHeight={"150%"} h='100%' placeholder='Enter Your name' border="none" _focusVisible={{border:'none'}}  />
-        </Box>
+            lineHeight={"150%"}   {...formik.getFieldProps('name')} placeholder='Enter Username'  border="none" _focusVisible={{border:'none'}}/>
+           <FormErrorMessage>{formik.errors.name}</FormErrorMessage>
+       
       </FormControl>
-      <FormControl >
+      <FormControl id="email" isInvalid={formik.errors.email && formik.touched.email} >
         <FormLabel fontWeight={'700'}>Email </FormLabel>
-        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
-        <Input fontSize="14px"
+        
+        
+             <Input fontSize="14px"
             fontWeight="400"
             type='email'
-            lineHeight={"150%"} h='100%' placeholder='Enter Email' border="none" _focusVisible={{border:'none'}}  />
-        </Box>
+            lineHeight={"150%"} h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px" placeholder='Enter Your Email'  {...formik.getFieldProps('email')} border="none" _focusVisible={{border:'none'}}  />
+         <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+       
       </FormControl>
-      <FormControl >
+      <FormControl  id="password" isInvalid={formik.errors.password && formik.touched.password} >
         <FormLabel fontWeight={'700'}>password </FormLabel>
-        <Box h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px">
-        <Input fontSize="14px"
+       
+        
+            <Input fontSize="14px"
             fontWeight="400"
             type='password'
-            lineHeight={"150%"} h='100%' placeholder=' Enter Password' border="none" _focusVisible={{border:'none'}}  />
-        </Box>
+            lineHeight={"150%"} h={{base:'45px',xl:'60px',xxl:'60px',xxxl:'90px'}} bg="white" borderRadius="5px" placeholder='Enter Your Password'  {...formik.getFieldProps('password')} border="none" _focusVisible={{border:'none'}} />
+          <FormErrorMessage>{formik.errors.password}</FormErrorMessage>
+        
       </FormControl>
     </Box>
     <Box width="40%" pt="5px">
@@ -153,6 +185,7 @@ const Registration = () => {
      p="8px 40px"
      borderRadius={"50px"}
      border="1px solid white"
+     onClick={formik.handleSubmit}
      >
      Signup
      </Button>
@@ -187,3 +220,4 @@ const Registration = () => {
 }
 
 export default Registration
+

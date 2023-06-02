@@ -3,27 +3,53 @@ import { OrganizationloginStepOne } from './OrganizationloginStepOne'
 import { OrganizationloginStepTwo } from './OrganizationloginStepTwo'
 import { Box } from '@chakra-ui/react'
 import LayoutWrapper from '../LayoutWrapper/LayoutWrapper'
+import { OrganizationProfile } from '../../app/Flok/OrganizationComponent/OrganizationProfile'
 
 const OrganizationLogin = () => {
-    const [step1,setstep1]=useState(false)
-    const PageHandler=()=>{
-        setstep1(!step1)
-    }
+    const [step, setStep] = useState("one");
+
+    const changeStep = (value) => {
+      setStep(value);
+      console.log(value);
+    };
+  
+    const handleClose = () => {
+      setStep("one");
+      onClose();
+    };
+    
   return (
-    <LayoutWrapper>
+    
 
    
    <Box>
-    <Box  display={step1? 'none':'block'} >
-        <OrganizationloginStepOne nextStep={PageHandler} />
+    
+   {step === "one" && (
+    <Box   >
+        <LayoutWrapper>
 
+       
+        <OrganizationloginStepOne nextStep={() => changeStep("two")} />
+        </LayoutWrapper>
     </Box>
-    <Box display={step1? 'block':'none'}>
-        <OrganizationloginStepTwo />
+   )}
+    {step === "two" && (
+    <Box >
+        <LayoutWrapper>
+
+        
+        <OrganizationloginStepTwo seeProfile={() => changeStep("three")} />
+        </LayoutWrapper>
     </Box>
+    )}
+    {step === "three" && (
+    <Box >
+        <OrganizationProfile  />
+    </Box>
+    )}
 
    </Box>
-   </LayoutWrapper>
+   
   )
 }
 

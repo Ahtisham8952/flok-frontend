@@ -1,5 +1,6 @@
 import {
     Box,
+    Button,
     Checkbox,
     Divider,
     Flex,
@@ -9,12 +10,14 @@ import {
     InputGroup,
     Stack,
     Text,
+    Link,
   } from "@chakra-ui/react";
   import React from "react";
 import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
   import FlokSlider from "../LandingPage/FlokSlider"
+import TemplateSlider from "./TemplateSlider";
   
-  export const ParentProfile = () => {
+  export const OrganizationProfile = () => {
     return (
       <LayoutWrapper>
 
@@ -28,7 +31,7 @@ import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
             fontWeight="600"
             lineHeight={"150%"}
           >
-       User Profile
+       Organization Profile
           </Text>
         </Flex>
         <Flex
@@ -125,7 +128,7 @@ import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
               pt="10"
               textColor="#67717D"
             >
-              Parent details
+             Organization details
             </Text>
             <Box bgColor="#E0E0E0" p="40px" borderRadius="20px" height="80%">
               <FormControl>
@@ -158,6 +161,18 @@ import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
                 </InputGroup>
               </FormControl>
             </Box>
+            <Button my='44px' bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+     color="#FFFFFF"
+     fontSize="14px"
+     fontWeight="400"
+     lineHeight={"150%"}
+     p="8px 40px"
+     borderRadius={"50px"}
+     border="1px solid white"
+     
+     >
+     Update
+     </Button>
           </Box>
   
           <Box mt={{ base: "0", md: "0", lg: "55" }}>
@@ -173,25 +188,25 @@ import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
   
             <Box mt="5">
               <Stack gap="5">
-                <Checkbox size="md"  borderColor={"black"}>
+                <Checkbox size="md" borderColor={"black"} >
                   Primary contact
                 </Checkbox>
-                <Checkbox size="md"  borderColor={"black"}>
+                <Checkbox size="md" borderColor={"black"} >
                   Primary contact
                 </Checkbox>
-                <Checkbox size="md"  defaultChecked borderColor={"black"}>
+                <Checkbox size="md"  defaultChecked>
                   Parent or guardian{" "}
                 </Checkbox>
-                <Checkbox size="md"  defaultChecked borderColor={"black"}>
+                <Checkbox size="md"  defaultChecked>
                   Parent or guardian{" "}
-                </Checkbox>
+                </Checkbox> 
                 <Checkbox size="md" borderColor={"black"} >
                   Email notifications{" "}
                 </Checkbox>
-                <Checkbox size="md"  borderColor={"black"}>
+                <Checkbox size="md" borderColor={"black"} >
                   Instant notifications{" "}
                 </Checkbox>
-                <Checkbox size="md" borderColor={"black"} >
+                <Checkbox size="md"  borderColor={"black"}>
                   Emegency contact{" "}
                 </Checkbox>
               </Stack>
@@ -219,25 +234,38 @@ import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
         </Box>
         <Box mt="37px">
           
-          <Box mb='50px'>
+        
+    <Box mb='50px'>
 
    
-    <Flex justifyContent={"flex-start"} alignItems={"flex-start"} mb='50px'>
-    <Text
-        lineHeight={"42px"}
-        fontSize={"32px"}
-        fontWeight={"600"}
+<Flex justifyContent={"space-between"} alignItems={"flex-start"} mb='50px'>
+<Text
+    lineHeight={"42px"}
+    fontSize={"32px"}
+    fontWeight={"600"}
+
+    color="#1F1F1F"
+    >
+    Organization Page
+
+    </Text>
+    <Button as={Link} href="/editorganizationpage"  bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+     color="#FFFFFF"
+     fontSize="14px"
+     fontWeight="400"
+     lineHeight={"150%"}
+     p="8px 40px"
+     borderRadius={"50px"}
+     border="1px solid white"
     
-        color="#1F1F1F"
-        >
-        Waiting lists
+     >
+     Create Page
+     </Button>
 
-        </Text>
-
-       
-    </Flex>
-    <FlokSlider/>
-    </Box>
+   
+</Flex>
+<TemplateSlider/>
+</Box>
           
         </Box>
         <Box mt="37px">
@@ -245,19 +273,32 @@ import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
           <Box mb='50px'>
 
    
-    <Flex justifyContent={"flex-start"} alignItems={"flex-start"} mb='50px'>
-    <Text
-        lineHeight={"42px"}
-        fontSize={"32px"}
-        fontWeight={"600"}
-    
-        color="#1F1F1F"
-        >
-      Active Orders
-        </Text>
+          <Flex justifyContent={"space-between"} alignItems={"flex-start"} mb='50px'>
+<Text
+    lineHeight={"42px"}
+    fontSize={"32px"}
+    fontWeight={"600"}
 
-       
-    </Flex>
+    color="#1F1F1F"
+    >
+    Organization Page
+
+    </Text>
+    <Button as={Link} href="/createevent"  bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+     color="#FFFFFF"
+     fontSize="14px"
+     fontWeight="400"
+     lineHeight={"150%"}
+     p="8px 40px"
+     borderRadius={"50px"}
+     border="1px solid white"
+    
+     >
+     Create Event
+     </Button>
+
+   
+</Flex>
     <FlokSlider/>
     </Box>
           

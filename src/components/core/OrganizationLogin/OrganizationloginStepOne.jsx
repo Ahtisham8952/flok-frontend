@@ -94,25 +94,25 @@ export const OrganizationloginStepOne = ({nextStep}) => {
           </Text>
           <Box mt="15px">
             <Stack gap={{ base: "2px", md: "2px", lg: "5px" }}>
-              <Checkbox _focusVisible={{borderColor:'black'}} size="md"  defaultChecked>
+              <Checkbox _focusVisible={{borderColor:'black'}} size="md"  defaultChecked borderColor={"black"}>
                 Primary contact
               </Checkbox>
-              <Checkbox size="md"  >
+              <Checkbox size="md"  borderColor={"black"} >
               Personal name is organization name
               </Checkbox>
-              <Checkbox size="md"  >
+              <Checkbox size="md"  borderColor={"black"} >
               Registered service with locality
               </Checkbox>
-              <Checkbox size="md"  >
+              <Checkbox size="md" borderColor={"black"} >
               Email notifications
               </Checkbox>
-              <Checkbox size="md"  >
+              <Checkbox size="md" borderColor={"black"} >
               Instant notifications
               </Checkbox>
-              <Checkbox size="md"  >
+              <Checkbox size="md" borderColor={"black"} >
               Authorised for pickup
               </Checkbox>
-              <Checkbox size="md"  >
+              <Checkbox size="md" borderColor={"black"} >
               Emegency contact
               </Checkbox>
             </Stack>

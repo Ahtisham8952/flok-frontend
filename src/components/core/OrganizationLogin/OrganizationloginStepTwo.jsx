@@ -14,7 +14,7 @@ import { Upload } from "./Upload";
 
  
   
-  export const OrganizationloginStepTwo = () => {
+  export const OrganizationloginStepTwo = ({seeProfile}) => {
     return (
       <Box p="30px">
         <Heading
@@ -27,6 +27,17 @@ import { Upload } from "./Upload";
           pb="15px"
         >
           Welcome to Flok for oganizations{" "}
+        </Heading>
+        <Heading
+          as="h2"
+          fontSize={{ base: "40px", md: "40px", lg: "70px" }}
+          fontWeight="700"
+          lineHeight={{ base: "50px", md: "50px", lg: "74px" }}
+          textAlign="center"
+          pt="5px"
+          pb="15px"
+        >
+          Step #2 of 2
         </Heading>
         <Box textAlign="center">
           <Text fontSize="17px" fontWeight="300" lineHeight="27px">
@@ -181,19 +192,19 @@ import { Upload } from "./Upload";
   
               <Box mt="5">
                 <Stack gap="5px">
-                  <Checkbox size="md"  >
+                  <Checkbox size="md" borderColor={"black"} >
                   Show Mission statment
                   </Checkbox>
-                  <Checkbox size="md"  >
+                  <Checkbox size="md" borderColor={"black"} >
                   Show About you
                   </Checkbox>
-                  <Checkbox size="md" >
+                  <Checkbox size="md"  borderColor={"black"}>
                   Show Organization details
                   </Checkbox>
-                  <Checkbox size="md"  defaultChecked>
+                  <Checkbox size="md"  defaultChecked borderColor={"black"}>
                   Show staff deails
                   </Checkbox>
-                  <Checkbox size="md" >
+                  <Checkbox size="md" borderColor={"black"} >
                   Handicapt friendly
                   </Checkbox>
                   
@@ -210,6 +221,7 @@ import { Upload } from "./Upload";
      borderRadius={"50px"}
      border="1px solid white"
      w='100%'
+     onClick={seeProfile}
      
      >
    Save Oraganization details  (You will be able to edit to these later)

@@ -122,7 +122,7 @@ const SearchBarFilter = () => {
             {isOpen && (
         <Box
          position={"absolute" }
-         top='64px'
+         top='110px'
          left={"0px"}
         w="100%"
        

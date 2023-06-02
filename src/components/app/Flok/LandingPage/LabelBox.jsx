@@ -23,7 +23,7 @@ const LabelData=[
     },
     {
         Image:'/birthdayicon-1.svg',
-        Name:'birthdays'
+        Name:'Birthdays'
 
     },
     {
