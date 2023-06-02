@@ -3,6 +3,7 @@ import {
     Button,
     Divider,
     FormControl,
+    Image,
     Img,
     Input,
     InputGroup,
@@ -133,7 +134,7 @@ import {
                   flexDirection="column"
                   justifyContent="center"
                 >
-                  <Img
+                  <Image
                     src="uploadpic.svg"
                     alt="uploadpic"
                     alignItem="center"
@@ -170,7 +171,7 @@ import {
                   flexDirection="column"
                   justifyContent="center"
                 >
-                  <Img
+                  <Image
                     src="uploadpic.svg"
                     alt="uploadpic"
                     alignItem="center"
@@ -201,11 +202,11 @@ import {
             >
               <FormControl>
                 <InputGroup bgColor="white" p="4" borderRadius="35">
-                  <img src="user.svg"></img>
+                  <Image src="user.svg"/>
                   <Input type="Text" placeholder="Name" border="none" />
                 </InputGroup>
                 <InputGroup mt="20px" bgColor="white" p="4" borderRadius="35">
-                  <Img src="calendar.svg" />
+                  <Image src="calendar.svg" />
                   <Input type="Text" placeholder="Date" border="none" />
                 </InputGroup>
                 <InputGroup
@@ -216,7 +217,7 @@ import {
                   display="flex"
                   flexDirection="column"
                 >
-                  <Img
+                  <Image
                     src="uploadpic.svg"
                     alt="uploadpic"
                     alignItem="center"
@@ -239,11 +240,11 @@ import {
             >
               <FormControl>
                 <InputGroup bgColor="white" p="4" borderRadius="35">
-                  <img src="user.svg"></img>
+                  <Image src="user.svg"/>
                   <Input type="Text" placeholder="Name" border="none" />
                 </InputGroup>
                 <InputGroup mt="20px" bgColor="white" p="4" borderRadius="35">
-                  <Img src="calendar.svg" />
+                  <Image src="calendar.svg" />
                   <Input type="Text" placeholder="Date" border="none" />
                 </InputGroup>
                 <InputGroup
@@ -254,7 +255,7 @@ import {
                   display="flex"
                   flexDirection="column"
                 >
-                  <Img
+                  <Image
                     src="uploadpic.svg"
                     alt="uploadpic"
                     alignItem="center"

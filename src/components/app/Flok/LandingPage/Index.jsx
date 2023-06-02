@@ -12,7 +12,7 @@ const LandingPage = () => {
    <LayoutWrapper>
 
    <Box borderTop={"1px solid #2C2C2C"}>
-        <Image w='100%' src="/kidsBanner.png"/>
+        <Image alt='img' w='100%' src="/kidsBanner.png"/>
       </Box>
     <Box pt={{base:'30px',md:'40px',lg:'60px',xl:'100px'}} maxW={"1750px"} w='100%' mx='auto' px='20px' >
       

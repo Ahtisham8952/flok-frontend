@@ -158,7 +158,7 @@ const EventPageForm = () => {
         </Box>
 
         {EventsFormField.map((li, index) => (
-          <Box maxW={{ base: "100%", md: "50%" }} width="100%">
+          <Box key={index} maxW={{ base: "100%", md: "50%" }} width="100%">
             <Flex align="center" justifyContent="space-between" my="50px">
               <Text fontSize={{ base: "13px", lg: "16px" }} fontWeight="700">
                 {li.Text}
