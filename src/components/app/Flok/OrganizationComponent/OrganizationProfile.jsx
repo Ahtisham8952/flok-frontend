@@ -316,7 +316,7 @@ import TemplateSlider from "./TemplateSlider";
     
         color="#1F1F1F"
         >
-       Orders History
+      Event History
         </Text>
 
        
