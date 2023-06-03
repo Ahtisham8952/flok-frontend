@@ -61,21 +61,7 @@ const OrganizationPageStyle1 = () => {
 </Flex>
 <FlokSlider/>
 </Box>
-<Flex justifyContent={"center"} mb='40px'>
-<Button type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
-     color="#FFFFFF"
-     fontSize="14px"
-     fontWeight="400"
-     lineHeight={"150%"}
-     p="8px 40px"
-     borderRadius={"50px"}
-     border="1px solid white"
-     
-     >
-   Buy Now
-     </Button>
-     <CheckoutModal/>
-</Flex>
+
     </Box>
     </LayoutWrapper>
     

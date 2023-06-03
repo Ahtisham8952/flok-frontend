@@ -200,7 +200,10 @@ const EventMain = () => {
 </Flex>
 <FlokSlider/>
 </Box>
+<Flex justifyContent={"center"}>
 <CheckoutModal/>
+</Flex>
+
 
 
 
