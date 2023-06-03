@@ -6,17 +6,14 @@ import LayoutWrapper from '../LayoutWrapper/LayoutWrapper'
 import { OrganizationProfile } from '../../app/Flok/OrganizationComponent/OrganizationProfile'
 
 const OrganizationLogin = () => {
-    const [step, setStep] = useState("one");
+    const [step, setStep] = useState('one');
 
     const changeStep = (value) => {
       setStep(value);
       console.log(value);
     };
   
-    const handleClose = () => {
-      setStep("one");
-      onClose();
-    };
+   
     
   return (
     

@@ -57,7 +57,7 @@ const Footers = () => {
           >
       CALL US
           </Text>
-          <Flex alignItems={"center"} gap={{base:'10px',md:'26px'}} flexDirection={{base:'column',md:'row'}}>
+          <Flex alignItems={"center"} gap={{base:'10px',md:'26px'}} flexDirection={{base:'column',md:'row'}} mb='20px'>
           <Text
            
             color="#8F8F8F"
@@ -68,7 +68,7 @@ const Footers = () => {
     +44 330 022 5700
           </Text>
           <Text
-           mb="20px"
+         
             color="#8F8F8F"
             fontSize="14px"
             fontWeight="300"

@@ -1,8 +1,9 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
-
+import FlokSlider from "../LandingPage/FlokSlider"
 import OrganizationCardStyle1 from "./OrganizationCardStyle1";
 import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
+import { CheckoutModal } from "../CheckoutComponent/CheckoutModal";
 
 const OrganizationPageStyle1 = () => {
   return (
@@ -41,6 +42,40 @@ const OrganizationPageStyle1 = () => {
       <Box my="60px">
         <OrganizationCardStyle1 />
       </Box>
+      <Box my='50px' pt='40px' borderTop={"1px solid #DAD9D9"}>
+
+   
+<Flex justifyContent={"center"} alignItems={"center"} mb='50px' >
+<Text
+    lineHeight={"42px"}
+    fontSize={{base:'20px',md:'24px',lg:'32px'}}
+    fontWeight={"600"}
+
+    color="#1F1F1F"
+    >
+    Events from Little Fish
+
+    </Text>
+
+   
+</Flex>
+<FlokSlider/>
+</Box>
+<Flex justifyContent={"center"} mb='40px'>
+<Button type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+     color="#FFFFFF"
+     fontSize="14px"
+     fontWeight="400"
+     lineHeight={"150%"}
+     p="8px 40px"
+     borderRadius={"50px"}
+     border="1px solid white"
+     
+     >
+   Buy Now
+     </Button>
+     <CheckoutModal/>
+</Flex>
     </Box>
     </LayoutWrapper>
     

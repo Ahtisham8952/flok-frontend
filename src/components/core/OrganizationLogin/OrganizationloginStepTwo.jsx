@@ -212,9 +212,9 @@ import { Upload } from "./Upload";
               </Box>
             </Box>
             <Box pt="25px">
-          <Button mt='30px' type="submit" bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+          <Box mt='30px'  bg="#1F1F1F" colorScheme={"#1F1F1F"} 
      color="#FFFFFF"
-     fontSize="14px"
+     fontSize={{base:'11px',md:'14px'}}
      fontWeight="400"
      lineHeight={"150%"}
      p="8px 40px"
@@ -225,7 +225,7 @@ import { Upload } from "./Upload";
      
      >
    Save Oraganization details  (You will be able to edit to these later)
-     </Button>
+     </Box>
           </Box>
           </Box>
           

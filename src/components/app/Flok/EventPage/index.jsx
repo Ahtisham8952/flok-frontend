@@ -1,18 +1,26 @@
-import { Box, Image,Text,Flex, Button } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Image,Text,Flex, Button,Link } from '@chakra-ui/react'
+import React, { useState } from 'react'
 import ImageGallery from './ImageGallery'
 import FlokSlider from "../LandingPage/FlokSlider"
 import OrganizationalCards from './OrganizationalCards'
 import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper'
+import { CheckoutModal } from '../CheckoutComponent/CheckoutModal'
+
 const EventMain = () => {
+  const [seemore,setseemore]=useState(false)
+  const MoreHandler=()=>{
+    setseemore(!seemore)
+  }
     return (
         <>
         <LayoutWrapper>
 
        
             <Box maxW={"1760px"} w='100%' px='20px' mx="auto" mb='100px'>
-                <Box mb='100px'>
-                <Image alt="banner" src='/eventBanner.png'/> 
+                <Box mb='100px'  >
+                <Image alt="banner"    width="100%"
+      objectFit="cover"
+      objectPosition="center" borderRadius={'0px 0px 20px 20px'}  h={{ base: "280px", sm: "400px", md: "600px" }}  src='/eventBanner.png'/> 
                 </Box>
                 <Flex justifyContent={"center"} alignItems={"center"} mb="40px">
                     <Box>
@@ -97,17 +105,33 @@ const EventMain = () => {
           >
    Restrictrions: Ages 7-12
           </Text>
-          <Text
-            mb='16px'
-            color="#1F1F1F"
-            fontSize="24px"
-            fontWeight="700"
-            lineHeight={"25px"}
+        
+          <Button display={seemore? 'none':'block'}  bg="#1F1F1F" colorScheme={"#1F1F1F"} 
+     color="#FFFFFF"
+     fontSize="14px"
+     fontWeight="400"
+     lineHeight={"150%"}
+     p="8px 40px"
+     borderRadius={"50px"}
+     border="1px solid white"
+     onClick={MoreHandler}
+     >
+   Read More
+     </Button>
+     <Box display={seemore? 'block':'none'} mt='20px'>
+     <Text
+            
+            color="#191919"
+            fontSize="14px"
+            fontWeight="400"
+            lineHeight={"150%"}
           >
-  Read More
+       This Organization is Managing This Event <Link href='/organizationPageStyle1' fontSize="18px"
+            fontWeight="700"> Organization Name</Link>
           </Text>
+     </Box>
                         </Box>
-                        <Box>
+                        <Box textAlign={"center"}>
                     <Button bg="#1F1F1F" colorScheme={"#1F1F1F"} 
      color="#FFFFFF"
      fontSize="14px"
@@ -115,12 +139,12 @@ const EventMain = () => {
      lineHeight={"150%"}
      p="8px 56px"
      borderRadius={"50px"}
-     mr="10px"
+     
      >
        Reserve
      </Button>
      <Text
-     textAlign={{base:'left',md:'center'}}
+     textAlign={{base:'center',md:'center'}}
             
             color="#FF564A"
             fontSize="17px"
@@ -130,7 +154,7 @@ const EventMain = () => {
        Only 2 tickets left
           </Text>
                     </Box>
-                    <Box>
+                    <Box textAlign={"center"}>
                     <Button bg="#1F1F1F" colorScheme={"#1F1F1F"} 
      color="#FFFFFF"
      fontSize="14px"
@@ -143,7 +167,7 @@ const EventMain = () => {
       Join Waiting list
      </Button>
      <Text
-     textAlign={{base:'left',md:'center'}}
+     textAlign={{base:'center',md:'center'}}
             
             color="#1F1F1F"
             fontSize="17px"
@@ -176,6 +200,7 @@ const EventMain = () => {
 </Flex>
 <FlokSlider/>
 </Box>
+<CheckoutModal/>
 
 
 

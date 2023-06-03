@@ -1,8 +1,8 @@
-import { Box, Image, Heading, Center } from "@chakra-ui/react";
+import { Box, Image, Heading, Center, Text, Flex } from "@chakra-ui/react";
 import React from "react";
 import OrganizationCardStyle4 from "./OrganizationCardStyle4";
 import LayoutWrapper from "../../../core/LayoutWrapper/LayoutWrapper";
-
+import FlokSlider from "../LandingPage/FlokSlider"
 const OrganizationPageStyle4 = () => {
   return (
     <LayoutWrapper>
@@ -36,6 +36,25 @@ const OrganizationPageStyle4 = () => {
       <Box my="60px">
         <OrganizationCardStyle4 />
       </Box>
+      <Box my='50px' pt='40px' borderTop={"1px solid #DAD9D9"}>
+
+   
+<Flex justifyContent={"center"} alignItems={"center"} mb='50px' >
+<Text
+    lineHeight={"42px"}
+    fontSize={{base:'20px',md:'24px',lg:'32px'}}
+    fontWeight={"600"}
+
+    color="#1F1F1F"
+    >
+    Events from Little Fish
+
+    </Text>
+
+   
+</Flex>
+<FlokSlider/>
+</Box>
     </Box>
     </LayoutWrapper>
   );

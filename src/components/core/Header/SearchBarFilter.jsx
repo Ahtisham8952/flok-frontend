@@ -10,90 +10,111 @@ import {
   VStack,
   Button,
   Grid,
+  Link,
 } from "@chakra-ui/react";
 
 import React, { useState } from "react";
 const data=[
     {
-        searchName:'Near me'
+        searchName:'Near me',
+        Redirect:'',
 
     },
     {
-        searchName:'Music'
+        searchName:'Music',
+        Redirect:'',
 
     },
     {
-        searchName:'Language'
+        searchName:'Language',
+        Redirect:'',
 
     },
     {
-        searchName:'Chess'
+        searchName:'Chess',
+        Redirect:'',
 
     },
     {
-        searchName:'Reading'
+        searchName:'Reading',
+        Redirect:'',
 
     },
     {
-        searchName:'Adventure'
+        searchName:'Adventure',
+        Redirect:'',
 
     },
     {
-        searchName:'All'
+        searchName:'All',
+        Redirect:'',
 
     },
     {
-        searchName:'Today'
+        searchName:'Today',
+        Redirect:'',
 
     },
     {
-        searchName:'This weekend'
+        searchName:'This weekend',
+        Redirect:'',
 
         
     },
     {
-        searchName:'Free'
+        searchName:'Free',
+        Redirect:'',
 
     },
     {
-        searchName:'Wednesday'
+        searchName:'Wednesday',
+        Redirect:'',
 
     },
     {
-        searchName:'Geneva'
+        searchName:'Geneva',
+        Redirect:'/genevaevents',
 
     },
     {
-        searchName:'Music'
+        searchName:'Music',
+        Redirect:'',
 
     },
     {
-        searchName:'Language'
+        searchName:'Language',
+        Redirect:'',
 
     },
     {
-        searchName:'Chess'
+        searchName:'Chess',
+        Redirect:'',
 
     },
     {
-        searchName:'Reading'
+        searchName:'Reading',
+        Redirect:'',
 
     },
 
     {
-        searchName:'Adventure'
+        searchName:'Adventure',
+        Redirect:'',
 
     },
     {
-        searchName:'All'
+        searchName:'All',
+        Redirect:'',
 
     },
     {
-        searchName:'Today'
+        searchName:'Today',
+        Redirect:'',
 
     },
     {
-        searchName:'This weekend'
+        searchName:'This weekend',
+        Redirect:'',
 
     },
 ]
@@ -132,7 +153,7 @@ const SearchBarFilter = () => {
            <Grid  templateColumns={{ base: "repeat(2, 1fr)",sm:"repeat(4, 1fr)", md: "repeat(5, 1fr)",lg:'repeat(10, 1fr)' }}  w="100%" gap="32px">
            {data.map((li,index) => (
             
-            <Button key={index} bg="#F2F2F2" colorScheme={"#F2F2F2"} 
+            <Button as={Link} href={li.Redirect} key={index} bg="#F2F2F2" colorScheme={"#F2F2F2"} 
      color="#B8B8B8"
      fontSize="10px"
      fontWeight="400"

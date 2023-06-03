@@ -54,7 +54,7 @@ const LabelData=[
 ]
 const LabelBox = () => {
   return (
-    <Box maxW={"1530px"} w='100%' mx="auto" px={{base:'20px',md:'20px',lg:'100px',xl:'100px',xxl:'100px'}}>
+    <Box maxW={"1530px"} w='100%' mx="auto" px={{base:'20px',md:'20px',lg:'100px',xl:'100px',xxl:'100px'}} cursor={"pointer"}>
          <Grid  templateColumns={{ base: "repeat(2, 1fr)",sm:"repeat(3, 1fr)", md: "repeat(4, 1fr)",lg:'repeat(5, 1fr)' }}  w="100%" gap={{base:'16px',md:'24px',xl:'12px',xxl:'24px'}} mx="auto">
         {LabelData.map((li,index) => (
  <Box key={index} bg="#FFFFFF" borderRadius={"5px"} maxW="270px" w="100%" py="11px" px={{base:'11px',md:'12px',xl:'7px',xxl:'15px'}} display={"flex"} alignItems="center" gap={{base:'12px',md:'14px',lg:'20px',xl:'24px',xxl:'32px',xxxl:'64px'}}>

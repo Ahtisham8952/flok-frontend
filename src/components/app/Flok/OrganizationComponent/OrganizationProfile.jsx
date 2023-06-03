@@ -27,7 +27,7 @@ import TemplateSlider from "./TemplateSlider";
         <Text
             
             color="#191919"
-            fontSize={{base:'40px',md:'45px',xl:'55px',xxxl:'64px'}}
+            fontSize={{base:'30px',md:'45px',xl:'55px',xxxl:'64px'}}
             fontWeight="600"
             lineHeight={"150%"}
           >
@@ -37,7 +37,7 @@ import TemplateSlider from "./TemplateSlider";
         <Flex
           alignItems={{ base: "flex-start", lg: "center" }}
           gap="4%"
-          pt="40"
+          pt="40px"
           flexDirection={{ base: "column", lg: "row" }}
         >
           <Flex>
